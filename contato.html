@@ -24,10 +24,10 @@
             <h2>Mande uma mensagem</h2>
             <br>
             <form>
-            <input type="text" placeholder="Nome">
-            <input type="email" id="email" placeholder="E-mail">
-            <br>
-            <br>
+            <input type="text" placeholder="Nome" id= "nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
+            <input type="email" id="email" placeholder="E-mail" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
             <textarea name="assunto" id="assunto" cols="48" rows="10" placeholder="Sua mensagem Aqui :)"></textarea>
             <br>
             <button class="botao">Enviar</button>
@@ -69,5 +69,7 @@
         </p>
         
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
