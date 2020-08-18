@@ -28,15 +28,16 @@
             <div id="txtNome"></div>
             <input type="email" id="email" placeholder="E-mail" onkeyup="validaEmail()">
             <div id="txtEmail"></div>
-            <textarea name="assunto" id="assunto" cols="48" rows="10" placeholder="Sua mensagem Aqui :)"></textarea>
+            <textarea name="assunto" id="assunto" cols="48" rows="10" placeholder="Sua mensagem Aqui :)" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
-            <button class="botao">Enviar</button>
+            <button class="botao" onclick="enviar()">Enviar</button>
             </form>
         </div>
 
         <div>
             <h2 class="fonte">Endereço:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.83941810785!2d-46.62382068502262!3d-23.538277384694354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58e4cafd49ad%3A0xc9d38bf58a3b84e8!2sETEC%20Carlos%20de%20Campos!5e0!3m2!1spt-BR!2sbr!4v1597676399121!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.83941810785!2d-46.62382068502262!3d-23.538277384694354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58e4cafd49ad%3A0xc9d38bf58a3b84e8!2sETEC%20Carlos%20de%20Campos!5e0!3m2!1spt-BR!2sbr!4v1597676399121!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
         </div>
 
     </div>
